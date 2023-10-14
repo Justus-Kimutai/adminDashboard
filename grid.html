@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display:inline-grid;
+            grid-template: 40px 40px 40px 40px 40px /  40px 40px 40px 40px 40px;
+            grid-template-areas: 
+            "living living living living living" 
+            "kich bed bed dine dine"
+            "kich bed bed dine dine"
+            "kich bed bed store store"
+            "kich bath bath store store"
+            "laundry laundry . . ."
+            ;
+        }
+        .container div{
+            border: 2px solid rgb(20, 20, 20);
+            font: 50%;
+            text-align: center;
+        }
+        .Living{
+            
+            grid-area: living;
+        }
+        .kitchen{
+           grid-area: kich;
+        }
+        .bedroom{
+           grid-area: bed;
+        }
+        .bathroom{
+           grid-area: bath;
+        }
+        .dining{
+            grid-area: dine;
+        }
+        .store{
+           grid-area: store;
+        }
+        .laundry{
+            grid-area: laundry;
+        }
+    </style>
+
+
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="Living">Living</div>
+        <div class="kitchen">Kitchen</div>
+        <div class="bedroom">bedroom</div>
+        <div class="bathroom">bathroom</div>
+        <div class="dining">dining</div>
+        <div class="store">Strore</div>
+        <div class="laundry">Laundry</div>
+    </div>
+</body>
+</html>
